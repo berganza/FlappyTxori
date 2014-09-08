@@ -16,18 +16,19 @@
 {
     [super viewDidLoad];
 
-    // Configure the view.
+    // Configurar la vista.
     SKView * skView = (SKView *)self.view;
-//    skView.showsFPS = YES;
-//    skView.showsNodeCount = YES;
-    /* Sprite Kit applies additional optimizations to improve rendering performance */
+    //skView.showsFPS = YES;
+    //skView.showsNodeCount = YES;
+    
+    // SpriteKit aplica optimizaciones adicionales para mejorar el rendimieno del renderizado
     skView.ignoresSiblingOrder = YES;
     
-    // Create and configure the scene.
+    // Crear y configurar la vista
     Menu * pantallaMenu = [Menu sceneWithSize:skView.bounds.size];
     pantallaMenu.scaleMode = SKSceneScaleModeAspectFill;
     
-    // Present the scene.
+    // Presentar la escena
     [skView presentScene:pantallaMenu];
 }
 
@@ -48,7 +49,7 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Release any cached data, images, etc that aren't in use.
+    // Liberar caché, imágenes...etc, que no están en uso
 }
 
 - (BOOL)prefersStatusBarHidden {
