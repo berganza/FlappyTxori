@@ -10,12 +10,21 @@
 		9AE3ACF019BDB5B9008AF442 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE3ACEF19BDB5B9008AF442 /* main.m */; };
 		9AE3ACF319BDB5BA008AF442 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE3ACF219BDB5BA008AF442 /* AppDelegate.m */; };
 		9AE3ACF819BDB5BA008AF442 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9AE3ACF719BDB5BA008AF442 /* GameScene.sks */; };
-		9AE3ACFB19BDB5BA008AF442 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE3ACFA19BDB5BA008AF442 /* GameViewController.m */; };
 		9AE3ACFE19BDB5BA008AF442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AE3ACFC19BDB5BA008AF442 /* Main.storyboard */; };
 		9AE3AD0019BDB5BA008AF442 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AE3ACFF19BDB5BA008AF442 /* Images.xcassets */; };
 		9AE3AD0C19BDB5BA008AF442 /* FlappyTxoriTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE3AD0B19BDB5BA008AF442 /* FlappyTxoriTests.m */; };
 		9AE3AD1719BDB684008AF442 /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE3AD1619BDB684008AF442 /* Menu.m */; };
 		9AE3AD1B19BDB7CB008AF442 /* Creditos.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE3AD1A19BDB7CB008AF442 /* Creditos.m */; };
+		9AE3AD2519BDBB72008AF442 /* Jugar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE3AD2419BDBB72008AF442 /* Jugar.m */; };
+		9AE3AD2B19BDBD4E008AF442 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE3AD2A19BDBD4E008AF442 /* GameViewController.m */; };
+		9AE3AD3019BDD4E4008AF442 /* EfectoPuerta.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9AE3AD2F19BDD4E4008AF442 /* EfectoPuerta.wav */; };
+		9AE3AD3219BDD5FD008AF442 /* camara@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AE3AD3119BDD5FD008AF442 /* camara@2x.png */; };
+		9AE3AD3419BDD605008AF442 /* camara.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AE3AD3319BDD605008AF442 /* camara.png */; };
+		9AE3AD3619BDD868008AF442 /* TXORIA TXORI.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9AE3AD3519BDD868008AF442 /* TXORIA TXORI.mp3 */; };
+		9AE3AD3819BDDB87008AF442 /* creditos.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AE3AD3719BDDB87008AF442 /* creditos.png */; };
+		9AE3AD3A19BDDC93008AF442 /* Lau teilatu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9AE3AD3919BDDC93008AF442 /* Lau teilatu.mp3 */; };
+		9AE3AD3E19BDE5C4008AF442 /* Euskara oi Euskara.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 9AE3AD3D19BDE5C4008AF442 /* Euskara oi Euskara.m4a */; };
+		9AE3AD4019BDE9A3008AF442 /* ikurrina.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AE3AD3F19BDE9A3008AF442 /* ikurrina.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +44,6 @@
 		9AE3ACF119BDB5B9008AF442 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9AE3ACF219BDB5BA008AF442 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9AE3ACF719BDB5BA008AF442 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		9AE3ACF919BDB5BA008AF442 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
-		9AE3ACFA19BDB5BA008AF442 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		9AE3ACFD19BDB5BA008AF442 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9AE3ACFF19BDB5BA008AF442 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9AE3AD0519BDB5BA008AF442 /* FlappyTxoriTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlappyTxoriTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +53,18 @@
 		9AE3AD1619BDB684008AF442 /* Menu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Menu.m; sourceTree = "<group>"; };
 		9AE3AD1919BDB7CB008AF442 /* Creditos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Creditos.h; sourceTree = "<group>"; };
 		9AE3AD1A19BDB7CB008AF442 /* Creditos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Creditos.m; sourceTree = "<group>"; };
+		9AE3AD2319BDBB72008AF442 /* Jugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jugar.h; sourceTree = "<group>"; };
+		9AE3AD2419BDBB72008AF442 /* Jugar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jugar.m; sourceTree = "<group>"; };
+		9AE3AD2919BDBD4E008AF442 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		9AE3AD2A19BDBD4E008AF442 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		9AE3AD2F19BDD4E4008AF442 /* EfectoPuerta.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = EfectoPuerta.wav; sourceTree = "<group>"; };
+		9AE3AD3119BDD5FD008AF442 /* camara@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camara@2x.png"; sourceTree = "<group>"; };
+		9AE3AD3319BDD605008AF442 /* camara.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camara.png; sourceTree = "<group>"; };
+		9AE3AD3519BDD868008AF442 /* TXORIA TXORI.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "TXORIA TXORI.mp3"; sourceTree = "<group>"; };
+		9AE3AD3719BDDB87008AF442 /* creditos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = creditos.png; sourceTree = "<group>"; };
+		9AE3AD3919BDDC93008AF442 /* Lau teilatu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Lau teilatu.mp3"; sourceTree = "<group>"; };
+		9AE3AD3D19BDE5C4008AF442 /* Euskara oi Euskara.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Euskara oi Euskara.m4a"; sourceTree = "<group>"; };
+		9AE3AD3F19BDE9A3008AF442 /* ikurrina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ikurrina.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,12 +108,11 @@
 		9AE3ACEC19BDB5B9008AF442 /* FlappyTxori */ = {
 			isa = PBXGroup;
 			children = (
-				9AE3ACF119BDB5B9008AF442 /* AppDelegate.h */,
-				9AE3ACF219BDB5BA008AF442 /* AppDelegate.m */,
+				9AE3AD2919BDBD4E008AF442 /* GameViewController.h */,
+				9AE3AD2A19BDBD4E008AF442 /* GameViewController.m */,
+				9AE3AD2719BDBD21008AF442 /* Delegado */,
 				9AE3ACF719BDB5BA008AF442 /* GameScene.sks */,
-				9AE3ACF919BDB5BA008AF442 /* GameViewController.h */,
-				9AE3ACFA19BDB5BA008AF442 /* GameViewController.m */,
-				9AE3ACFC19BDB5BA008AF442 /* Main.storyboard */,
+				9AE3AD2C19BDBD58008AF442 /* Storyboard */,
 				9AE3ACFF19BDB5BA008AF442 /* Images.xcassets */,
 				9AE3ACED19BDB5B9008AF442 /* Supporting Files */,
 			);
@@ -148,6 +166,9 @@
 		9AE3AD1D19BDB838008AF442 /* Musica */ = {
 			isa = PBXGroup;
 			children = (
+				9AE3AD3D19BDE5C4008AF442 /* Euskara oi Euskara.m4a */,
+				9AE3AD3519BDD868008AF442 /* TXORIA TXORI.mp3 */,
+				9AE3AD3919BDDC93008AF442 /* Lau teilatu.mp3 */,
 			);
 			name = Musica;
 			sourceTree = "<group>";
@@ -155,6 +176,7 @@
 		9AE3AD1E19BDB845008AF442 /* Efectos Sonido */ = {
 			isa = PBXGroup;
 			children = (
+				9AE3AD2F19BDD4E4008AF442 /* EfectoPuerta.wav */,
 			);
 			name = "Efectos Sonido";
 			sourceTree = "<group>";
@@ -169,6 +191,10 @@
 		9AE3AD2019BDB865008AF442 /* Imagenes */ = {
 			isa = PBXGroup;
 			children = (
+				9AE3AD3F19BDE9A3008AF442 /* ikurrina.png */,
+				9AE3AD3719BDDB87008AF442 /* creditos.png */,
+				9AE3AD3319BDD605008AF442 /* camara.png */,
+				9AE3AD3119BDD5FD008AF442 /* camara@2x.png */,
 			);
 			name = Imagenes;
 			sourceTree = "<group>";
@@ -188,9 +214,36 @@
 			isa = PBXGroup;
 			children = (
 				9AE3AD1819BDB791008AF442 /* Menu */,
+				9AE3AD2619BDBB77008AF442 /* Jugar */,
 				9AE3AD1C19BDB7D1008AF442 /* Creditos */,
 			);
 			name = "Pantallas Juego";
+			sourceTree = "<group>";
+		};
+		9AE3AD2619BDBB77008AF442 /* Jugar */ = {
+			isa = PBXGroup;
+			children = (
+				9AE3AD2319BDBB72008AF442 /* Jugar.h */,
+				9AE3AD2419BDBB72008AF442 /* Jugar.m */,
+			);
+			name = Jugar;
+			sourceTree = "<group>";
+		};
+		9AE3AD2719BDBD21008AF442 /* Delegado */ = {
+			isa = PBXGroup;
+			children = (
+				9AE3ACF119BDB5B9008AF442 /* AppDelegate.h */,
+				9AE3ACF219BDB5BA008AF442 /* AppDelegate.m */,
+			);
+			name = Delegado;
+			sourceTree = "<group>";
+		};
+		9AE3AD2C19BDBD58008AF442 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				9AE3ACFC19BDB5BA008AF442 /* Main.storyboard */,
+			);
+			name = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,9 +326,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AE3AD3E19BDE5C4008AF442 /* Euskara oi Euskara.m4a in Resources */,
+				9AE3AD3019BDD4E4008AF442 /* EfectoPuerta.wav in Resources */,
 				9AE3AD0019BDB5BA008AF442 /* Images.xcassets in Resources */,
+				9AE3AD3619BDD868008AF442 /* TXORIA TXORI.mp3 in Resources */,
+				9AE3AD3219BDD5FD008AF442 /* camara@2x.png in Resources */,
+				9AE3AD3819BDDB87008AF442 /* creditos.png in Resources */,
 				9AE3ACF819BDB5BA008AF442 /* GameScene.sks in Resources */,
 				9AE3ACFE19BDB5BA008AF442 /* Main.storyboard in Resources */,
+				9AE3AD3419BDD605008AF442 /* camara.png in Resources */,
+				9AE3AD3A19BDDC93008AF442 /* Lau teilatu.mp3 in Resources */,
+				9AE3AD4019BDE9A3008AF442 /* ikurrina.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,10 +354,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AE3ACFB19BDB5BA008AF442 /* GameViewController.m in Sources */,
 				9AE3ACF319BDB5BA008AF442 /* AppDelegate.m in Sources */,
 				9AE3AD1719BDB684008AF442 /* Menu.m in Sources */,
+				9AE3AD2519BDBB72008AF442 /* Jugar.m in Sources */,
 				9AE3ACF019BDB5B9008AF442 /* main.m in Sources */,
+				9AE3AD2B19BDBD4E008AF442 /* GameViewController.m in Sources */,
 				9AE3AD1B19BDB7CB008AF442 /* Creditos.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,6 +546,7 @@
 				9AE3AD1119BDB5BA008AF442 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9AE3AD1219BDB5BA008AF442 /* Build configuration list for PBXNativeTarget "FlappyTxoriTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +555,7 @@
 				9AE3AD1419BDB5BA008AF442 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

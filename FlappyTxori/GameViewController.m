@@ -9,9 +9,6 @@
 #import "GameViewController.h"
 #import "Menu.h"
 
-@implementation SKScene (Unarchive)
-
-@end
 
 @implementation GameViewController
 
