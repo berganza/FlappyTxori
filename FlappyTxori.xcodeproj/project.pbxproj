@@ -25,6 +25,22 @@
 		9AE3AD3A19BDDC93008AF442 /* Lau teilatu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9AE3AD3919BDDC93008AF442 /* Lau teilatu.mp3 */; };
 		9AE3AD3E19BDE5C4008AF442 /* Euskara oi Euskara.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 9AE3AD3D19BDE5C4008AF442 /* Euskara oi Euskara.m4a */; };
 		9AE3AD4019BDE9A3008AF442 /* ikurrina.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AE3AD3F19BDE9A3008AF442 /* ikurrina.png */; };
+		9DB7FA5A19BF60DB009C02A9 /* appstoreicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DB7FA4A19BF60DB009C02A9 /* appstoreicon.png */; };
+		9DB7FA5B19BF60DB009C02A9 /* bird-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DB7FA4B19BF60DB009C02A9 /* bird-01.png */; };
+		9DB7FA5C19BF60DB009C02A9 /* bird-02.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DB7FA4C19BF60DB009C02A9 /* bird-02.png */; };
+		9DB7FA5D19BF60DB009C02A9 /* bird-03.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DB7FA4D19BF60DB009C02A9 /* bird-03.png */; };
+		9DB7FA5E19BF60DB009C02A9 /* bird-04.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DB7FA4E19BF60DB009C02A9 /* bird-04.png */; };
+		9DB7FA5F19BF60DB009C02A9 /* fondo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DB7FA4F19BF60DB009C02A9 /* fondo.png */; };
+		9DB7FA6019BF60DB009C02A9 /* goazen.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DB7FA5019BF60DB009C02A9 /* goazen.png */; };
+		9DB7FA6119BF60DB009C02A9 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DB7FA5119BF60DB009C02A9 /* icon.png */; };
+		9DB7FA6219BF60DB009C02A9 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DB7FA5219BF60DB009C02A9 /* icon@2x.png */; };
+		9DB7FA6319BF60DB009C02A9 /* land.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DB7FA5319BF60DB009C02A9 /* land.png */; };
+		9DB7FA6419BF60DB009C02A9 /* PipeDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DB7FA5419BF60DB009C02A9 /* PipeDown.png */; };
+		9DB7FA6519BF60DB009C02A9 /* PipeUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DB7FA5519BF60DB009C02A9 /* PipeUp.png */; };
+		9DB7FA6619BF60DB009C02A9 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DB7FA5619BF60DB009C02A9 /* play.png */; };
+		9DB7FA6719BF60DB009C02A9 /* scoreboard.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DB7FA5719BF60DB009C02A9 /* scoreboard.png */; };
+		9DB7FA6819BF60DB009C02A9 /* sky.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DB7FA5819BF60DB009C02A9 /* sky.png */; };
+		9DB7FA6919BF60DB009C02A9 /* title-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DB7FA5919BF60DB009C02A9 /* title-logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +81,22 @@
 		9AE3AD3919BDDC93008AF442 /* Lau teilatu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Lau teilatu.mp3"; sourceTree = "<group>"; };
 		9AE3AD3D19BDE5C4008AF442 /* Euskara oi Euskara.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Euskara oi Euskara.m4a"; sourceTree = "<group>"; };
 		9AE3AD3F19BDE9A3008AF442 /* ikurrina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ikurrina.png; sourceTree = "<group>"; };
+		9DB7FA4A19BF60DB009C02A9 /* appstoreicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appstoreicon.png; sourceTree = "<group>"; };
+		9DB7FA4B19BF60DB009C02A9 /* bird-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bird-01.png"; sourceTree = "<group>"; };
+		9DB7FA4C19BF60DB009C02A9 /* bird-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bird-02.png"; sourceTree = "<group>"; };
+		9DB7FA4D19BF60DB009C02A9 /* bird-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bird-03.png"; sourceTree = "<group>"; };
+		9DB7FA4E19BF60DB009C02A9 /* bird-04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bird-04.png"; sourceTree = "<group>"; };
+		9DB7FA4F19BF60DB009C02A9 /* fondo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fondo.png; sourceTree = "<group>"; };
+		9DB7FA5019BF60DB009C02A9 /* goazen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goazen.png; sourceTree = "<group>"; };
+		9DB7FA5119BF60DB009C02A9 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		9DB7FA5219BF60DB009C02A9 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		9DB7FA5319BF60DB009C02A9 /* land.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = land.png; sourceTree = "<group>"; };
+		9DB7FA5419BF60DB009C02A9 /* PipeDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PipeDown.png; sourceTree = "<group>"; };
+		9DB7FA5519BF60DB009C02A9 /* PipeUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PipeUp.png; sourceTree = "<group>"; };
+		9DB7FA5619BF60DB009C02A9 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		9DB7FA5719BF60DB009C02A9 /* scoreboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scoreboard.png; sourceTree = "<group>"; };
+		9DB7FA5819BF60DB009C02A9 /* sky.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sky.png; sourceTree = "<group>"; };
+		9DB7FA5919BF60DB009C02A9 /* title-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "title-logo.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +223,22 @@
 		9AE3AD2019BDB865008AF442 /* Imagenes */ = {
 			isa = PBXGroup;
 			children = (
+				9DB7FA4A19BF60DB009C02A9 /* appstoreicon.png */,
+				9DB7FA4B19BF60DB009C02A9 /* bird-01.png */,
+				9DB7FA4C19BF60DB009C02A9 /* bird-02.png */,
+				9DB7FA4D19BF60DB009C02A9 /* bird-03.png */,
+				9DB7FA4E19BF60DB009C02A9 /* bird-04.png */,
+				9DB7FA4F19BF60DB009C02A9 /* fondo.png */,
+				9DB7FA5019BF60DB009C02A9 /* goazen.png */,
+				9DB7FA5119BF60DB009C02A9 /* icon.png */,
+				9DB7FA5219BF60DB009C02A9 /* icon@2x.png */,
+				9DB7FA5319BF60DB009C02A9 /* land.png */,
+				9DB7FA5419BF60DB009C02A9 /* PipeDown.png */,
+				9DB7FA5519BF60DB009C02A9 /* PipeUp.png */,
+				9DB7FA5619BF60DB009C02A9 /* play.png */,
+				9DB7FA5719BF60DB009C02A9 /* scoreboard.png */,
+				9DB7FA5819BF60DB009C02A9 /* sky.png */,
+				9DB7FA5919BF60DB009C02A9 /* title-logo.png */,
 				9AE3AD3F19BDE9A3008AF442 /* ikurrina.png */,
 				9AE3AD3719BDDB87008AF442 /* creditos.png */,
 				9AE3AD3319BDD605008AF442 /* camara.png */,
@@ -326,13 +374,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DB7FA5E19BF60DB009C02A9 /* bird-04.png in Resources */,
 				9AE3AD3E19BDE5C4008AF442 /* Euskara oi Euskara.m4a in Resources */,
+				9DB7FA6319BF60DB009C02A9 /* land.png in Resources */,
 				9AE3AD3019BDD4E4008AF442 /* EfectoPuerta.wav in Resources */,
+				9DB7FA6719BF60DB009C02A9 /* scoreboard.png in Resources */,
+				9DB7FA5A19BF60DB009C02A9 /* appstoreicon.png in Resources */,
+				9DB7FA6919BF60DB009C02A9 /* title-logo.png in Resources */,
+				9DB7FA5B19BF60DB009C02A9 /* bird-01.png in Resources */,
+				9DB7FA6819BF60DB009C02A9 /* sky.png in Resources */,
+				9DB7FA6519BF60DB009C02A9 /* PipeUp.png in Resources */,
+				9DB7FA5F19BF60DB009C02A9 /* fondo.png in Resources */,
+				9DB7FA6419BF60DB009C02A9 /* PipeDown.png in Resources */,
 				9AE3AD0019BDB5BA008AF442 /* Images.xcassets in Resources */,
 				9AE3AD3619BDD868008AF442 /* TXORIA TXORI.mp3 in Resources */,
+				9DB7FA5C19BF60DB009C02A9 /* bird-02.png in Resources */,
+				9DB7FA6219BF60DB009C02A9 /* icon@2x.png in Resources */,
 				9AE3AD3219BDD5FD008AF442 /* camara@2x.png in Resources */,
 				9AE3AD3819BDDB87008AF442 /* creditos.png in Resources */,
 				9AE3ACF819BDB5BA008AF442 /* GameScene.sks in Resources */,
+				9DB7FA6119BF60DB009C02A9 /* icon.png in Resources */,
+				9DB7FA6619BF60DB009C02A9 /* play.png in Resources */,
+				9DB7FA5D19BF60DB009C02A9 /* bird-03.png in Resources */,
+				9DB7FA6019BF60DB009C02A9 /* goazen.png in Resources */,
 				9AE3ACFE19BDB5BA008AF442 /* Main.storyboard in Resources */,
 				9AE3AD3419BDD605008AF442 /* camara.png in Resources */,
 				9AE3AD3A19BDDC93008AF442 /* Lau teilatu.mp3 in Resources */,
