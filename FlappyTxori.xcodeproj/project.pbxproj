@@ -37,6 +37,9 @@
 		9DB7FA7F19BF81C0009C02A9 /* Yellow_Bird_Wing_Down.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DB7FA7319BF81C0009C02A9 /* Yellow_Bird_Wing_Down.png */; };
 		9DB7FA8019BF81C0009C02A9 /* Yellow_Bird_Wing_Straight.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DB7FA7419BF81C0009C02A9 /* Yellow_Bird_Wing_Straight.png */; };
 		9DB7FA8119BF81C0009C02A9 /* Yellow_Bird_Wing_Up.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DB7FA7519BF81C0009C02A9 /* Yellow_Bird_Wing_Up.png */; };
+		9DB7FA8419BF822F009C02A9 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DB7FA8219BF822F009C02A9 /* icon.png */; };
+		9DB7FA8519BF822F009C02A9 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DB7FA8319BF822F009C02A9 /* icon@2x.png */; };
+		9DB7FA8719BF823D009C02A9 /* appstoreicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DB7FA8619BF823D009C02A9 /* appstoreicon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +92,9 @@
 		9DB7FA7319BF81C0009C02A9 /* Yellow_Bird_Wing_Down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Yellow_Bird_Wing_Down.png; sourceTree = "<group>"; };
 		9DB7FA7419BF81C0009C02A9 /* Yellow_Bird_Wing_Straight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Yellow_Bird_Wing_Straight.png; sourceTree = "<group>"; };
 		9DB7FA7519BF81C0009C02A9 /* Yellow_Bird_Wing_Up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Yellow_Bird_Wing_Up.png; sourceTree = "<group>"; };
+		9DB7FA8219BF822F009C02A9 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		9DB7FA8319BF822F009C02A9 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		9DB7FA8619BF823D009C02A9 /* appstoreicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appstoreicon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +221,9 @@
 		9AE3AD2019BDB865008AF442 /* Imagenes */ = {
 			isa = PBXGroup;
 			children = (
+				9DB7FA8619BF823D009C02A9 /* appstoreicon.png */,
+				9DB7FA8219BF822F009C02A9 /* icon.png */,
+				9DB7FA8319BF822F009C02A9 /* icon@2x.png */,
 				9DB7FA6A19BF81C0009C02A9 /* Bottom_Scroller.png */,
 				9DB7FA6B19BF81C0009C02A9 /* Day_background.png */,
 				9DB7FA6C19BF81C0009C02A9 /* Downward_Green_Pipe.png */,
@@ -382,9 +391,12 @@
 				9DB7FA7A19BF81C0009C02A9 /* GameOverText.png in Resources */,
 				9DB7FA7C19BF81C0009C02A9 /* PlayButton.png in Resources */,
 				9DB7FA7E19BF81C0009C02A9 /* Upward_Green_Pipe.png in Resources */,
+				9DB7FA8419BF822F009C02A9 /* icon.png in Resources */,
 				9DB7FA7D19BF81C0009C02A9 /* TapToStart.png in Resources */,
 				9DB7FA7B19BF81C0009C02A9 /* GetReadyText.png in Resources */,
 				9AE3AD4019BDE9A3008AF442 /* ikurrina.png in Resources */,
+				9DB7FA8719BF823D009C02A9 /* appstoreicon.png in Resources */,
+				9DB7FA8519BF822F009C02A9 /* icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
