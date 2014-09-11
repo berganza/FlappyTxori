@@ -8,6 +8,7 @@
 
 #import "GameViewController.h"
 #import "Menu.h"
+#import "Juego.h"
 
 
 @implementation GameViewController
@@ -25,7 +26,7 @@
     skView.ignoresSiblingOrder = YES;
     
     // Crear y configurar la vista
-    Menu * pantallaMenu = [Menu sceneWithSize:skView.bounds.size];
+    Menu *pantallaMenu = [Menu sceneWithSize:skView.bounds.size];
     pantallaMenu.scaleMode = SKSceneScaleModeAspectFill;
     
     // Presentar la escena

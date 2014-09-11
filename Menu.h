@@ -7,7 +7,6 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
-#import "Jugar.h"
 #import "Creditos.h"
 
 @interface Menu : SKScene

@@ -7,6 +7,7 @@
 //
 
 #import "Menu.h"
+#import "Juego.h"
 
     AVAudioPlayer * musicaInicial;
 
@@ -55,6 +56,8 @@
     juego.position = CGPointMake(CGRectGetMinX(self.frame)+250,CGRectGetMidY(self.frame) * 8/6);
     juego.name=@"juego";
     return juego;
+    
+    
 }
 
 - (SKLabelNode *) creditos {
@@ -107,7 +110,7 @@
     if ([nodo.name isEqualToString:@"juego"]) {
         
         SKTransition * transicion = [SKTransition doorsOpenVerticalWithDuration:2];
-        Jugar * escena1 = [Jugar sceneWithSize:self.frame.size];
+        Juego * escena1 = [Juego sceneWithSize:self.frame.size];
         [self.view presentScene:escena1 transition: transicion];
         
         [self stopMusica];

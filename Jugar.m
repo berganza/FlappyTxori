@@ -1,51 +1,49 @@
 //
-//  Jugar.m
-//  FlappyTxori
+//  StartGameLayer.m
+//  FlappyBird
 //
-//  Created by Berganza on 08/09/14.
-//  Copyright (c) 2014 Berganza. All rights reserved.
+//  Created by Srikanth KV on 22/02/14.
+//  Copyright (c) 2014 mytechspace. All rights reserved.
 //
 
 #import "Jugar.h"
 
+@interface Jugar()
+@property (nonatomic, retain) SKSpriteNode* playButton;
+@end
+
+
 @implementation Jugar
 
--(id)initWithSize:(CGSize)size {
-    if (self = [super initWithSize:size]) {
+- (id)initWithSize:(CGSize)size
+{
+    if(self = [super initWithSize:size])
+    {
+        SKSpriteNode* startGameText = [SKSpriteNode spriteNodeWithImageNamed:@"FlappyBirdText"];
+        startGameText.position = CGPointMake(size.width * 0.5f, size.height * 0.8f);
+        [self addChild:startGameText];
         
+        SKSpriteNode* playButton = [SKSpriteNode spriteNodeWithImageNamed:@"PlayButton"];
+        playButton.position = CGPointMake(size.width * 0.5f, size.height * 0.30f);
+        [self addChild:playButton];
         
-        self.scaleMode = SKSceneScaleModeAspectFit;
-        [self addChild:self.volver];
-        
+        [self setPlayButton:playButton];
     }
-    return self;
-}
-
-
-- (SKLabelNode *)volver {
-    SKLabelNode *volver = [SKLabelNode labelNodeWithFontNamed:@"Futura-Medium"];
-    volver.text = @"volver";
-    volver.fontSize = 24;
-    volver.zPosition = 2;
-    volver.position = CGPointMake(CGRectGetMidX(self.frame),CGRectGetMidY(self.frame));
-    volver.name = @"volver";
-    return volver;
     
+    return self;
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     UITouch *touch = [touches anyObject];
     CGPoint location = [touch locationInNode:self];
-    SKNode *node = [self nodeAtPoint:location];
     
-    if ([node.name isEqualToString:@"volver"]) {
-        
-        
-        SKTransition *reveal = [SKTransition doorsCloseVerticalWithDuration:2];
-        Menu * escena = [Menu sceneWithSize:self.frame.size];
-        [self.view presentScene:escena transition: reveal];
+    if ([_playButton containsPoint:location])
+    {
+        if([self.delegate respondsToSelector:@selector(startGameLayer:tapRecognizedOnButton:)])
+        {
+            [self.delegate startGameLayer:self tapRecognizedOnButton:StartGameLayerPlayButton];
+        }
     }
 }
-
 @end
