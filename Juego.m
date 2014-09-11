@@ -252,7 +252,7 @@ static inline CGPoint CGPointMultiplyScalar(const CGPoint a, const CGFloat b)
 - (void) showStartGameLayer
 {
     // Eliminar el pilar actual de la escena
-    for (int i = self.children.count - 1; i >= 0; i--)
+    for (NSInteger i = self.children.count - 1; i >= 0; i--)
     {
         SKNode* childNode = [self.children objectAtIndex:i];
         if(childNode.physicsBody.categoryBitMask == pillerCategory)
@@ -274,7 +274,7 @@ static inline CGPoint CGPointMultiplyScalar(const CGPoint a, const CGFloat b)
 - (void) showGameOverLayer
 {
     // Eliminar el pilar actual de la escena
-    for (int i = self.children.count - 1; i >= 0; i--)
+    for (NSInteger i = self.children.count - 1; i >= 0; i--)
     {
         SKNode* childNode = [self.children objectAtIndex:i];
         if(childNode.physicsBody.categoryBitMask == pillerCategory)
