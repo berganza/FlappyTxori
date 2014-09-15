@@ -26,6 +26,7 @@
 		9D9C449619C6EBDD00645C23 /* Yellow_Bird_Wing_Down.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D9C449019C6EBDD00645C23 /* Yellow_Bird_Wing_Down.png */; };
 		9D9C449719C6EBDD00645C23 /* Yellow_Bird_Wing_Straight.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D9C449119C6EBDD00645C23 /* Yellow_Bird_Wing_Straight.png */; };
 		9D9C449819C6EBDD00645C23 /* Yellow_Bird_Wing_Up.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D9C449219C6EBDD00645C23 /* Yellow_Bird_Wing_Up.png */; };
+		B345051419C72E1000DE1376 /* txori.atlas in Resources */ = {isa = PBXBuildFile; fileRef = B345051319C72E1000DE1376 /* txori.atlas */; };
 		B38A5BB019C0AAB900AC5B5C /* CapaOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = B38A5BAF19C0AAB900AC5B5C /* CapaOverlay.m */; };
 		B3C28D2619C18D0F007F4F57 /* Tximpum.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C28D2519C18D0F007F4F57 /* Tximpum.m */; };
 		B3C28D2919C1918D007F4F57 /* Juego.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C28D2819C1918D007F4F57 /* Juego.m */; };
@@ -81,6 +82,7 @@
 		9D9C449019C6EBDD00645C23 /* Yellow_Bird_Wing_Down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Yellow_Bird_Wing_Down.png; sourceTree = "<group>"; };
 		9D9C449119C6EBDD00645C23 /* Yellow_Bird_Wing_Straight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Yellow_Bird_Wing_Straight.png; sourceTree = "<group>"; };
 		9D9C449219C6EBDD00645C23 /* Yellow_Bird_Wing_Up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Yellow_Bird_Wing_Up.png; sourceTree = "<group>"; };
+		B345051319C72E1000DE1376 /* txori.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = txori.atlas; sourceTree = "<group>"; };
 		B38A5BAE19C0AAB900AC5B5C /* CapaOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CapaOverlay.h; sourceTree = "<group>"; };
 		B38A5BAF19C0AAB900AC5B5C /* CapaOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CapaOverlay.m; sourceTree = "<group>"; };
 		B3C28D2419C18D0F007F4F57 /* Tximpum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tximpum.h; sourceTree = "<group>"; };
@@ -235,6 +237,7 @@
 		9AE3AD2019BDB865008AF442 /* Imagenes */ = {
 			isa = PBXGroup;
 			children = (
+				B345051319C72E1000DE1376 /* txori.atlas */,
 				B3C7A2AB19C1C26C00BB32C0 /* TapToStart.png */,
 				B3C7A2AC19C1C26C00BB32C0 /* FlappyBirdText.png */,
 				B3C7A2B219C1C26C00BB32C0 /* PlayButton.png */,
@@ -405,6 +408,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3C7A2C719C1C26C00BB32C0 /* appstoreicon.png in Resources */,
+				B345051419C72E1000DE1376 /* txori.atlas in Resources */,
 				9D9C449419C6EBDD00645C23 /* Downward_Green_Pipe.png in Resources */,
 				9AE3AD3E19BDE5C4008AF442 /* Euskara oi Euskara.m4a in Resources */,
 				9D9C449619C6EBDD00645C23 /* Yellow_Bird_Wing_Down.png in Resources */,

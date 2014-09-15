@@ -26,7 +26,7 @@
 
 // Integer masking bits, nos ayudan a identificar qué objetos colisionan con otros
 static const uint32_t pillerCategory            =  0x1 << 0;
-static const uint32_t flappyBirdCategory        =  0x1 << 1;
+static const uint32_t heganTxoriCategory        =  0x1 << 1;
 // Para detectar colisión contra el suelo
 static const uint32_t bottomBackgroundCategory  =  0x1 << 2;
 
@@ -65,13 +65,13 @@ static inline CGPoint CGPointMultiplyScalar(const CGPoint a, const CGFloat b)
 // Cada escena en SpriteKit se compone de nodos, siendo los sprites los más comunes
 // Los utilizamos para cargar imágenes y añadirlas a la escena mediante el objeto SKSpriteNode
 @property (nonatomic) SKSpriteNode* backgroundImageNode;
-@property (nonatomic) SKSpriteNode* flappyBird;
+@property (nonatomic) SKSpriteNode* heganTxori;
 
 @property (nonatomic) NSTimeInterval lastSpawnTimeInterval;
 @property (nonatomic) NSTimeInterval lastUpdateTimeInterval;
 
 // Para los diferentes estados del pájaro: Alas arriba, abajo y plegadas, para simular el vuelo.
-@property (nonatomic) NSArray* flappyBirdFrames;
+@property (nonatomic) NSArray* heganTxoriFrames;
 @end
 
 
@@ -103,10 +103,12 @@ static inline CGPoint CGPointMultiplyScalar(const CGPoint a, const CGFloat b)
         _gameOver = NO;
         _gameStarted = NO;
         [self showStartGameLayer];
-    }
+        
+            }
     return self;
 }
 
+// Mostrar resultado por pantalla
 
 
 
@@ -146,7 +148,7 @@ static inline CGPoint CGPointMultiplyScalar(const CGPoint a, const CGFloat b)
         bg.physicsBody.categoryBitMask = bottomBackgroundCategory;
         
         // Notificamos intersecciones con objetos
-        bg.physicsBody.contactTestBitMask = flappyBirdCategory;
+        bg.physicsBody.contactTestBitMask = heganTxoriCategory;
         
         // Detectamos colisiones
         bg.physicsBody.collisionBitMask = 0;
@@ -169,7 +171,7 @@ static inline CGPoint CGPointMultiplyScalar(const CGPoint a, const CGFloat b)
 
 - (void)initializeBird
 {
-    NSMutableArray *flappyBirdFrames = [NSMutableArray array];
+    NSMutableArray *heganTxoriFrames = [NSMutableArray array];
     for (int i = 0; i < 3; i++)
     {
         NSString* textureName = nil;
@@ -195,36 +197,36 @@ static inline CGPoint CGPointMultiplyScalar(const CGPoint a, const CGFloat b)
         }
         
         SKTexture* texture = [SKTexture textureWithImageNamed:textureName];
-        [flappyBirdFrames addObject:texture];
+        [heganTxoriFrames addObject:texture];
     }
-    [self setFlappyBirdFrames:flappyBirdFrames];
+    [self setHeganTxoriFrames:heganTxoriFrames];
     
-    self.flappyBird = [SKSpriteNode spriteNodeWithTexture:[_flappyBirdFrames objectAtIndex:1]];
+    self.heganTxori = [SKSpriteNode spriteNodeWithTexture:[_heganTxoriFrames objectAtIndex:1]];
     
     
     // Creamos la física y su forma geométrica para que las colisiones funcionen de forma óptima
-    _flappyBird.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:_flappyBird.size];
+    _heganTxori.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:_heganTxori.size];
     
     // Categoría a la que pertenece el objeto
-    _flappyBird.physicsBody.categoryBitMask = flappyBirdCategory;
+    _heganTxori.physicsBody.categoryBitMask = heganTxoriCategory;
     
     // Notificamos intersecciones con objetos
-    _flappyBird.physicsBody.contactTestBitMask = pillerCategory | bottomBackgroundCategory;
+    _heganTxori.physicsBody.contactTestBitMask = pillerCategory | bottomBackgroundCategory;
     
     // Detectamos colisiones
-    _flappyBird.physicsBody.collisionBitMask = 0;
+    _heganTxori.physicsBody.collisionBitMask = 0;
     
-    [self addChild:self.flappyBird];
+    [self addChild:self.heganTxori];
 }
 
 - (void) flyingBird
 {
     // Con este método hacemos al pájaro volar.
-    [_flappyBird runAction:[SKAction repeatActionForever:
-                      [SKAction animateWithTextures:_flappyBirdFrames
+    [_heganTxori runAction:[SKAction repeatActionForever:
+                      [SKAction animateWithTextures:_heganTxoriFrames
                                        timePerFrame:0.15f
                                              resize:NO
-                                            restore:YES]] withKey:@"flyingFlappyBird"];
+                                            restore:YES]] withKey:@"flyingheganTxori"];
     return;
 }
 
@@ -262,11 +264,11 @@ static inline CGPoint CGPointMultiplyScalar(const CGPoint a, const CGFloat b)
     }
     
     // Mover el nodo del pájaro al centro de la escena
-    self.flappyBird.position = CGPointMake(self.backgroundImageNode.size.width * 0.5f, self.frame.size.height * 0.6f);
+    self.heganTxori.position = CGPointMake(self.backgroundImageNode.size.width * 0.5f, self.frame.size.height * 0.6f);
     
     [_gameOverLayer removeFromParent];
     
-    _flappyBird.hidden = NO;
+    _heganTxori.hidden = NO;
     [self flyingBird];
     [self addChild:_startGameLayer];
 }
@@ -283,10 +285,10 @@ static inline CGPoint CGPointMultiplyScalar(const CGPoint a, const CGFloat b)
         }
     }
     
-    [_flappyBird removeAllActions];
-    _flappyBird.physicsBody.velocity = CGVectorMake(0, 0);
+    [_heganTxori removeAllActions];
+    _heganTxori.physicsBody.velocity = CGVectorMake(0, 0);
     self.physicsWorld.gravity = CGVectorMake(0, 0.0);
-    _flappyBird.hidden = YES;
+    _heganTxori.hidden = YES;
     
     _gameOver = YES;
     _gameStarted = NO;
@@ -294,6 +296,7 @@ static inline CGPoint CGPointMultiplyScalar(const CGPoint a, const CGFloat b)
     _dt = 0;
     _lastUpdateTimeInterval = 0;
     _lastSpawnTimeInterval = 0;
+    
     
     [_startGameLayer removeFromParent];
     [self addChild:_gameOverLayer];
@@ -308,7 +311,7 @@ static inline CGPoint CGPointMultiplyScalar(const CGPoint a, const CGFloat b)
     [_startGameLayer removeFromParent];
     [_gameOverLayer removeFromParent];
     
-    self.flappyBird.position = CGPointMake(self.backgroundImageNode.size.width * 0.3f, self.frame.size.height * 0.6f);
+    self.heganTxori.position = CGPointMake(self.backgroundImageNode.size.width * 0.3f, self.frame.size.height * 0.6f);
     
     // Añadimos la gravedad, para que el pájaro caiga si no tocamos la pantalla
     self.physicsWorld.gravity = CGVectorMake(0, -4.0);
@@ -388,7 +391,7 @@ static inline CGPoint CGPointMultiplyScalar(const CGPoint a, const CGFloat b)
     piller.physicsBody.categoryBitMask = pillerCategory;
     
     // Notificamos intersección con objetos
-    piller.physicsBody.contactTestBitMask = flappyBirdCategory;
+    piller.physicsBody.contactTestBitMask = heganTxoriCategory;
     
     // Detectamos colisión con objetos. Por defecto, todas las categorías.
     piller.physicsBody.collisionBitMask = 0;
@@ -481,12 +484,12 @@ static inline CGPoint CGPointMultiplyScalar(const CGPoint a, const CGFloat b)
 
 // Detección de colisiones, cuando ocurra --> Tximpum
 
-- (void)pillar:(SKSpriteNode *)pillar didCollideWithBird:(SKSpriteNode *)bird
+- (void)pillar:(SKSpriteNode *)pillar didCollideWithBird:(SKSpriteNode *)txori
 {
     [self showGameOverLayer];
 }
 
-- (void)flappyBird:(SKSpriteNode *)bird didCollideWithBottomScoller:(SKSpriteNode *)bottomBackground
+- (void)heganTxori:(SKSpriteNode *)txori didCollideWithBottomScoller:(SKSpriteNode *)bottomBackground
 {
     [self showGameOverLayer];
 }
@@ -511,14 +514,14 @@ static inline CGPoint CGPointMultiplyScalar(const CGPoint a, const CGFloat b)
     }
     
     if ((firstBody.categoryBitMask & pillerCategory) != 0 &&
-        (secondBody.categoryBitMask & flappyBirdCategory) != 0)
+        (secondBody.categoryBitMask & heganTxoriCategory) != 0)
     {
         [self pillar:(SKSpriteNode *) firstBody.node didCollideWithBird:(SKSpriteNode *) secondBody.node];
     }
-    else if ((firstBody.categoryBitMask & flappyBirdCategory) != 0 &&
+    else if ((firstBody.categoryBitMask & heganTxoriCategory) != 0 &&
             (secondBody.categoryBitMask & bottomBackgroundCategory) != 0)
     {
-        [self flappyBird:(SKSpriteNode *)firstBody.node didCollideWithBottomScoller:(SKSpriteNode *)secondBody.node];
+        [self heganTxori:(SKSpriteNode *)firstBody.node didCollideWithBottomScoller:(SKSpriteNode *)secondBody.node];
     }
 }
 
@@ -532,7 +535,7 @@ static inline CGPoint CGPointMultiplyScalar(const CGPoint a, const CGFloat b)
 {
     if(_gameStarted && _gameOver == NO)
     {
-        _flappyBird.physicsBody.velocity = CGVectorMake(0, 250);
+        _heganTxori.physicsBody.velocity = CGVectorMake(0, 250);
     }
 }
 
@@ -554,6 +557,7 @@ static inline CGPoint CGPointMultiplyScalar(const CGPoint a, const CGFloat b)
 {
     _gameOver = NO;
     _gameStarted = NO;
+    
     [self showStartGameLayer];
 }
 
@@ -562,7 +566,7 @@ static inline CGPoint CGPointMultiplyScalar(const CGPoint a, const CGFloat b)
 {
     [self enumerateChildNodesWithName:PILLARS usingBlock:^(SKNode *node, BOOL *stop)
     {
-        if(_flappyBird.position.x > node.position.x)
+        if(_heganTxori.position.x > node.position.x)
         {
             node.name = @"";    // Resetear a un nombre vacío, para no contar el pilar una vez ha pasado la posición del pájaro.
                         
