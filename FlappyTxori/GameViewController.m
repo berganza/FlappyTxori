@@ -23,7 +23,7 @@
     //skView.showsNodeCount = YES;
     
     // SpriteKit aplica optimizaciones adicionales para mejorar el rendimieno del renderizado
-    skView.ignoresSiblingOrder = YES;
+    //skView.ignoresSiblingOrder = YES;
     
     // Crear y configurar la vista
     Menu *pantallaMenu = [Menu sceneWithSize:skView.bounds.size];
