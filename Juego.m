@@ -130,7 +130,7 @@ static inline CGPoint CGPointMultiplyScalar(const CGPoint a, const CGFloat b)
     
     [musicaPintxo prepareToPlay];
     
-    musicaPintxo.numberOfLoops = 10;
+    musicaPintxo.numberOfLoops = INFINITY;
     //[_backgroundAudioPlayer setVolume:1.0];
     [musicaPintxo play];
 }
@@ -603,7 +603,6 @@ static inline CGPoint CGPointMultiplyScalar(const CGPoint a, const CGFloat b)
     
     [self showStartGameLayer];
     
-    [self stopPintxo];
 }
 
 // Método para actualizar el resultado: Por consola
