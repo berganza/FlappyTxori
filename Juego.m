@@ -9,6 +9,10 @@
 #import "Juego.h"
 #import "Jugar.h"
 #import "Tximpum.h"
+#import "Menu.h"
+
+
+    AVAudioPlayer * musicaPintxo;
 
 // Definición de constantes
 #define TIME 1.5
@@ -90,6 +94,11 @@ static inline CGPoint CGPointMultiplyScalar(const CGPoint a, const CGFloat b)
         // Inicializar pájaro
         [self initializeBird];
         
+        
+        // Inicializar música
+        [self startPintxo];
+        
+        
         [self initializeStartGameLayer];
         [self initializeGameOverLayer];
         
@@ -108,11 +117,45 @@ static inline CGPoint CGPointMultiplyScalar(const CGPoint a, const CGFloat b)
     return self;
 }
 
+
+
+
+
+// Iniciar música
+-(void) startPintxo {
+    
+    
+    NSURL * rutaMusica = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"Pintxo2" ofType:@"mp3"]];
+    musicaPintxo = [[AVAudioPlayer alloc] initWithContentsOfURL:rutaMusica error:nil];
+    
+    [musicaPintxo prepareToPlay];
+    
+    musicaPintxo.numberOfLoops = 10;
+    //[_backgroundAudioPlayer setVolume:1.0];
+    [musicaPintxo play];
+}
+
+-(void) stopPintxo {
+    
+    [musicaPintxo stop];
+    
+}
+
+
+
+
+
+
+
+
+
+
+
 // Mostrar resultado por pantalla
 
 
 
-// Inicializar fonde estático
+// Inicializar fondo estático
 
 - (void) initializeBackGround:(CGSize) sceneSize
 {
@@ -559,6 +602,8 @@ static inline CGPoint CGPointMultiplyScalar(const CGPoint a, const CGFloat b)
     _gameStarted = NO;
     
     [self showStartGameLayer];
+    
+    [self stopPintxo];
 }
 
 // Método para actualizar el resultado: Por consola

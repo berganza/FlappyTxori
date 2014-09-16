@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A966ED419C81DEE00C20509 /* Pintxo2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9A966ED319C81DEE00C20509 /* Pintxo2.mp3 */; };
 		9AE3ACF019BDB5B9008AF442 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE3ACEF19BDB5B9008AF442 /* main.m */; };
 		9AE3ACF319BDB5BA008AF442 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE3ACF219BDB5BA008AF442 /* AppDelegate.m */; };
 		9AE3ACF819BDB5BA008AF442 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9AE3ACF719BDB5BA008AF442 /* GameScene.sks */; };
@@ -55,6 +56,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9A966ED319C81DEE00C20509 /* Pintxo2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Pintxo2.mp3; sourceTree = "<group>"; };
 		9AE3ACEA19BDB5B9008AF442 /* FlappyTxori.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlappyTxori.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AE3ACEE19BDB5B9008AF442 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AE3ACEF19BDB5B9008AF442 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				9AE3AD2F19BDD4E4008AF442 /* EfectoPuerta.wav */,
+				9A966ED319C81DEE00C20509 /* Pintxo2.mp3 */,
 			);
 			name = "Efectos Sonido";
 			sourceTree = "<group>";
@@ -426,6 +429,7 @@
 				B3C7A2C319C1C26C00BB32C0 /* PlayButton.png in Resources */,
 				9D9C449319C6EBDD00645C23 /* Day_background.png in Resources */,
 				B3C7A2CC19C1C26C00BB32C0 /* camara@2x.png in Resources */,
+				9A966ED419C81DEE00C20509 /* Pintxo2.mp3 in Resources */,
 				9AE3AD3A19BDDC93008AF442 /* Lau teilatu.mp3 in Resources */,
 				B3C7A2CB19C1C26C00BB32C0 /* camara.png in Resources */,
 				B3C7A2BD19C1C26C00BB32C0 /* FlappyBirdText.png in Resources */,
